@@ -4,13 +4,162 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 header {
-  padding: 156px 0 100px;
+  text-transform: uppercase;
+  height:500px;
+  margin-top: 79px;
+  background: url('../images/heroTaco.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+
+header .container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
 }
 
 section {
   padding: 150px 0;
 }
 
+#about {
+	background-color: #f1ece0;
+	background-image: url('../images/avidanSketch.png');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: right;
+}
+
+
 .navbar-brand {
 	width: 100px;
 }
+
+.dark-effect {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #00000042;
+	z-index: 0;
+}
+
+header button {
+	background-color: #9e1212;
+	border: none;
+	color: white;
+	font-weight: bold;
+	padding: 15px 25px;
+}
+
+#about h2 {
+	color: #95dfd0;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #cc542f;
+}
+
+#about .fab {
+	color: #95dfd0;
+	margin:10px;
+}
+
+.triangle-border {
+	height: 20px;
+	border-image-source: url('../images/borderTriangle.png');
+}
+
+#services {
+	color: white;
+	background-color: #9e1212;
+	background-image: url('../images/avidanSketchWhite.png');
+	background-repeat: no-repeat;
+	/*background-size: 50%;*/
+	background-position: left -320px bottom -320px;
+}
+
+#services h2 {
+	color: orange;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #95dfd0;
+}
+
+#services button {
+	background-color: #95dfd0;
+	border: none;
+	color: white;
+	font-weight: bold;
+	padding: 15px 25px;
+}
+
+#contact {
+  height:500px;
+  margin-top: 0;
+  background: url('../images/contact-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+
+.right-arrow {
+	margin: 0;
+	padding: 0 0 0 36px;
+	list-style: none;
+	background-image: url("../images/bullet.png");
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-size: 15px;
+}
+
+.dark-effect-red {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #9e1e23;
+	opacity: 0.8;
+	z-index: 0;
+}
+
+footer {
+	background-color: #f1ece0;
+	color: black;
+	text-align: center;
+}
+
+footer .fab {
+	color: #9e1e23;
+	margin:10px;
+}
+
+
+/*.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  
+  border-top: 7px solid #f00;
+
+}*/
+
