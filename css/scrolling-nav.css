@@ -45,6 +45,10 @@ section {
 	padding: 0 15px;
 }
 
+.flexrow .flexitem iframe {
+	margin: 0 auto !important;
+}
+
 #about {
 	background-color: #f1ece0;
 	background-image: url('../images/avidanSketch.png');
