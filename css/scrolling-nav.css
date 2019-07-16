@@ -45,6 +45,10 @@ section {
 	padding: 0 15px;
 }
 
+#instagram-embed-0 {
+	max-width: 370px;
+}
+
 #about {
 	background-color: #f1ece0;
 	background-image: url('../images/avidanSketch.png');
