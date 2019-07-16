@@ -46,7 +46,7 @@ section {
 }
 
 #instagram-embed-0 {
-	max-width: 370px;
+	max-width: 370px !important;
 }
 
 #about {
