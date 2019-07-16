@@ -26,4 +26,16 @@
     offset: 56
   });
 
+
+  var distance = $('#about').offset().top,
+  $window = $(window);
+
+  $window.scroll(function() {
+      if ( $window.scrollTop() >= distance ) {
+          $('nav.navbar').addClass('goDark')
+      } else {
+          $('nav.navbar').removeClass('goDark');
+      }
+  });
+
 })(jQuery); // End of use strict

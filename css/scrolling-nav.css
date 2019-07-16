@@ -3,14 +3,15 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
+
+
+
 header {
   text-transform: uppercase;
   height:500px;
-  margin-top: 79px;
   background: url('../images/heroTaco.jpeg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
+  background-size:contain;
   background-attachment: fixed;
   color: white;
   position: relative;
@@ -27,17 +28,67 @@ header .container {
 }
 
 section {
-  padding: 150px 0;
+  padding: 100px 0;
+}
+
+.flexrow {
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: row;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.flexrow .flexitem { 
+	flex: 1;
+	padding: 0 15px;
 }
 
 #about {
 	background-color: #f1ece0;
 	background-image: url('../images/avidanSketch.png');
 	background-repeat: no-repeat;
-	background-size: 50%;
-	background-position: right;
+	background-size: 65%;
+	background-position: right bottom
 }
 
+a {
+	color: #79C9A8;
+	-webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #9E1F24;
+}
+
+
+nav {
+	background-color: transparent;
+	color: white;
+
+	-webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+nav a {
+	color: white;
+	font-size: 18px;
+	text-shadow: 1px 1px 2px #4c4c4c;
+}
+
+nav a:hover, nav a.active {
+	color: #79C9A8;
+}
+
+nav.goDark {
+	background-color: #464646;
+}
 
 .navbar-brand {
 	width: 100px;
@@ -52,22 +103,22 @@ section {
 }
 
 header button {
-	background-color: #9e1212;
+	background-color: #9E1F24;
 	border: none;
 	color: white;
 	font-weight: bold;
 	padding: 15px 25px;
 }
 
-#about h2 {
+/*#about h2 {
 	color: #95dfd0;
 	text-transform: uppercase;
 	text-decoration: underline;
 	text-decoration-color: #cc542f;
-}
+}*/
 
 #about .fab {
-	color: #95dfd0;
+	color: #9E1F24;
 	margin:10px;
 }
 
@@ -78,22 +129,21 @@ header button {
 
 #services {
 	color: white;
-	background-color: #9e1212;
+	background-color: #9E1F24;
 	background-image: url('../images/avidanSketchWhite.png');
 	background-repeat: no-repeat;
-	/*background-size: 50%;*/
 	background-position: left -320px bottom -320px;
 }
 
-#services h2 {
+/*#services h2 {
 	color: orange;
 	text-transform: uppercase;
 	text-decoration: underline;
 	text-decoration-color: #95dfd0;
-}
+}*/
 
 #services button {
-	background-color: #95dfd0;
+	background-color: #79C9A8;
 	border: none;
 	color: white;
 	font-weight: bold;
@@ -126,7 +176,7 @@ header button {
 	margin: 0;
 	padding: 0 0 0 36px;
 	list-style: none;
-	background-image: url("../images/bullet.png");
+	background-image: url("../images/bulletG.png");
 	background-repeat: no-repeat;
 	background-position-x: left;
 	background-size: 15px;
@@ -136,19 +186,19 @@ header button {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #9e1e23;
+	background: #9E1F24;
 	opacity: 0.8;
 	z-index: 0;
 }
 
 footer {
-	background-color: #f1ece0;
+	background-color: white;
 	color: black;
 	text-align: center;
 }
 
 footer .fab {
-	color: #9e1e23;
+	color: #9E1F24;
 	margin:10px;
 }
 
@@ -163,3 +213,33 @@ footer .fab {
 
 }*/
 
+h1 {
+	font-size: 3rem;
+}
+
+.title, h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.title .green {
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #79C9A8;
+	background-image: url(../images/borderTriangleFull.png);
+	background-repeat-y: no-repeat;
+	background-position: bottom;
+	padding-bottom: 12px;
+	background-size: 12px;
+}
+
+.title .red {
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #F47628;
+	background-image: url(../images/borderTriangleGreen.png);
+	background-repeat-y: no-repeat;
+	background-position: bottom;
+	padding-bottom: 12px;
+	background-size: 12px;
+}
